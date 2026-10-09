@@ -1,21 +1,168 @@
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;background:#081528;color:#fff;scroll-behavior:smooth}
-.container{width:90%;max-width:1200px;margin:auto}
-header{position:fixed;top:0;width:100%;background:#071120dd;backdrop-filter:blur(8px);z-index:10}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0}
-.logo{height:70px}.nav a{color:#fff;text-decoration:none;margin-left:20px}
-.hero{padding:130px 0 80px;background:linear-gradient(135deg,#06122e,#123a6b)}
-.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.hero h1{font:700 58px Cinzel,serif}.hero h1 span{color:#d9a63c}.tag{font-size:26px;margin:20px 0;color:#e4c36d}
-.hero-logo img{width:100%;max-width:500px;border-radius:20px}
-.btn{display:inline-block;background:#d9a63c;color:#081528;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:600;margin-top:20px;border:none}
-.light{background:#f7f8fc;color:#222;padding:80px 0}.light h2,.dark h2{font:700 40px Cinzel,serif;margin-bottom:20px}
-.light h3{font-size:34px;color:#0b2b63;margin-bottom:10px}
-.dark{padding:80px 0;background:#081528}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;margin-top:40px}
-.card{background:#12294a;padding:30px;border-radius:18px;transition:.3s}
-.card:hover{transform:translateY(-8px);box-shadow:0 10px 30px #0006}
-form{display:grid;gap:15px;margin-top:20px}
-input,textarea{padding:14px;border-radius:10px;border:1px solid #ccc;font:inherit}
-textarea{height:140px}
-footer{text-align:center;padding:25px;background:#06122e}
-@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero h1{font-size:40px}.logo{height:55px}}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: #081528;
+    color: #fff;
+    scroll-behavior: smooth
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #cdcbdadd;
+    backdrop-filter: blur(8px);
+    z-index: 10
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0
+}
+
+.logo {
+    height: 70px
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px
+}
+
+.hero {
+    padding: 130px 0 80px;
+    background: linear-gradient(135deg, #9e939d, #123a6b)
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center
+}
+
+.hero h1 {
+    font: 700 58px Cinzel, serif
+}
+
+.hero h1 span {
+    color: #d9a63c
+}
+
+.tag {
+    font-size: 26px;
+    margin: 20px 0;
+    color: #e4c36d
+}
+
+.hero-logo img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px
+}
+
+.btn {
+    display: inline-block;
+    background: #d9a63c;
+    color: #081528;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+    border: none
+}
+
+.light {
+    background: #f7f8fc;
+    color: #222;
+    padding: 80px 0
+}
+
+.light h2,
+.dark h2 {
+    font: 700 40px Cinzel, serif;
+    margin-bottom: 20px
+}
+
+.light h3 {
+    font-size: 34px;
+    color: #0b2b63;
+    margin-bottom: 10px
+}
+
+.dark {
+    padding: 80px 0;
+    background: #081528
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 40px
+}
+
+.card {
+    background: #12294a;
+    padding: 30px;
+    border-radius: 18px;
+    transition: .3s
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px #0006
+}
+
+form {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px
+}
+
+input,
+textarea {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font: inherit
+}
+
+textarea {
+    height: 140px
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #06122e
+}
+
+@media(max-width:900px) {
+    .hero-grid {
+        grid-template-columns: 1fr
+    }
+
+    .hero h1 {
+        font-size: 40px
+    }
+
+    .logo {
+        height: 55px
+    }
+}
